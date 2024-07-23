@@ -26,7 +26,7 @@ const VisitCounter = () => {
 
   return (
     <div>
-      <h1>Page Visit Counter</h1>
+      <h1>Page hgdsgdsfxdseftxzsdew Visit Counter</h1>
       <p>This page has been visited {visitCount} times.</p>
     </div>
   );
