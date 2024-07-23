@@ -9,16 +9,6 @@ const Blog = () => {
       image: 'https://th.bing.com/th/id/OIP.IxYxqsFErHah_8lZs2pUnwHaFj?rs=1&pid=ImgDetMain',
       title: 'Image 1',
       description: 'Description for Image 1'
-    },
-    {
-      image: 'https://www.thepaws.net/wp-content/uploads/2019/02/golden-retriever-dog-4-3-364x544.jpg',
-      title: 'Image 2',
-      description: 'Description for Image 2'
-    },
-    {
-      image: 'https://th.bing.com/th/id/OIP.cGf0iqARMxpMWmUxeZrY8QAAAA?w=427&h=640&rs=1&pid=ImgDetMain',
-      title: 'Image 3',
-      description: 'Description for Image 3'
     }
   ];
 
@@ -31,6 +21,8 @@ const Blog = () => {
     fetchData();
   }, []);
 
+  const ogImage = "https://th.bing.com/th/id/OIP.IxYxqsFErHah_8lZs2pUnwHaFj?rs=1&pid=ImgDetMain"
+
   return (
     <div>
       <Helmet>
@@ -38,13 +30,13 @@ const Blog = () => {
         <meta name="description" content="A collection of beautiful images." />
         <meta property="og:title" content="Image Gallery" />
         <meta property="og:description" content="A collection of beautiful images." />
-        <meta property="og:image" content={images[0]?.image || ''} />
+        <meta property="og:image" content={ogImage} />
         <meta property="og:url" content="https://your-website.com" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Image Gallery" />
         <meta name="twitter:description" content="A collection of beautiful images." />
-        <meta name="twitter:image" content={images[0]?.image || ''} />
+        <meta name="twitter:image" content={ogImage} />
       </Helmet>
       <h1>Image Gallery</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
