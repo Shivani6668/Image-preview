@@ -9,7 +9,12 @@ const Blog = () => {
       image: 'https://th.bing.com/th/id/OIP.IxYxqsFErHah_8lZs2pUnwHaFj?rs=1&pid=ImgDetMain',
       title: 'Image 1',
       description: 'Description for Image 1'
-    }
+    },
+    {
+        image: 'https://th.bing.com/th/id/OIP.IxYxqsFErHah_8lZs2pUnwHaFj?rs=1&pid=ImgDetMain',
+        title: 'Image 2',
+        description: 'Description for Image 1'
+      }
   ];
 
   useEffect(() => {
